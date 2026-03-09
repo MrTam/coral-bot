@@ -1,0 +1,15 @@
+services:
+  coral-bot:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - coral-data:/data
+    environment:
+      - MONZO_CLIENT_ID=${MONZO_CLIENT_ID}
+      - MONZO_CLIENT_SECRET=${MONZO_CLIENT_SECRET}
+      - CORAL_CALLBACK_URL=${CORAL_CALLBACK_URL}
+    restart: unless-stopped
+
+volumes:
+  coral-data:

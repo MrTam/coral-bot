@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "coral": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["run", "python", "-m", "coral_bot.server"],
+      "env": {
+        "MONZO_ACCESS_TOKEN": "${MONZO_ACCESS_TOKEN}"
+      }
+    }
+  }
+}

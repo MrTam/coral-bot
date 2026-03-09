@@ -1,0 +1,13 @@
+.venv/
+.git/
+.github/
+__pycache__/
+*.pyc
+tests/
+scripts/
+.pre-commit-config.yaml
+CLAUDE.md
+README.md
+.env
+.envrc
+tokens.json

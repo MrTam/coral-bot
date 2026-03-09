@@ -1,0 +1,21 @@
+# Secrets
+.envrc
+.env
+*.pem
+*.key
+tokens.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Node (semantic-release)
+node_modules/
+
+# OS
+.DS_Store
