@@ -4,6 +4,20 @@ A Python [MCP](https://modelcontextprotocol.io/) server that wraps the [Monzo](h
 
 Works with **Claude Code** (stdio, single-user) and **Claude Desktop** (HTTP, multi-user with full OAuth 2.0).
 
+## Container images
+
+<a href="https://cloudsmith.com">
+  <img src="https://img.shields.io/badge/OSS%20hosting%20by-cloudsmith-blue?logo=cloudsmith&style=flat-square" alt="Hosted by Cloudsmith">
+</a>
+
+Pre-built Docker images are available from [Cloudsmith](https://broadcasts.cloudsmith.com/mrtam/coral-bot):
+
+```bash
+docker pull docker.cloudsmith.io/mrtam/coral-bot/coral-bot:latest
+```
+
+Huge thanks to Cloudsmith for generously providing free package hosting for open source projects. If you're looking for a universal package management solution that handles Docker, Python, npm, and [many more formats](https://cloudsmith.com/product/formats) — definitely [check them out](https://cloudsmith.com).
+
 ## Features
 
 - **Transaction search** — find transactions by merchant, description, or notes
@@ -112,6 +126,10 @@ uv run ruff format --check src/ tests/ scripts/
 # Type check
 uv run ty check
 ```
+
+## Disclaimer
+
+This project was largely written with AI assistance ([Claude Code](https://claude.ai/claude-code)). The architecture, implementation, tests, and documentation were developed collaboratively between a human and Claude. It has been reviewed and tested, but please bear this in mind when evaluating the code.
 
 ## License
 
